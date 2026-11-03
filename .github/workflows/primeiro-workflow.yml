@@ -1,3 +1,4 @@
+
 name: Treinamento GitHub Actions
 run-name: ${{ github.actor }} executando testes de CI 🚀
 
@@ -22,4 +23,6 @@ jobs:
           ls -la ${{ github.workspace }}
 
       - name: Status final
-        run: echo "Status da execução: ${{ job.status }}."
+        run: |
+          echo "Status da execução: ${{ job.status }}."
+
